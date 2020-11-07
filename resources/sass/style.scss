@@ -6,6 +6,9 @@
     font-family: 'Bebas Neue', cursive;
     
 }
+.font-body{
+    font-family: 'Roboto', sans-serif !important;
+}
 
 .font-large{
     font-size: large !important;
@@ -52,5 +55,13 @@ header.masthead {
 // .nav-transparent { background-color:transparent;}
 
 .pt-custom{
-    padding-top: 200px !important;
+    padding-top: 150px !important;
+}
+
+.height-card-text{
+    height: 30vh;
+}
+
+.word-wrap{
+    word-wrap: break-word;
 }

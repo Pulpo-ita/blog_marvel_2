@@ -45,7 +45,7 @@ class PostController extends Controller
             'img' =>$request->file('img')->store('public/img')
         ]);
 
-        return redirect(route('homepage'))->with('status','Il tuo è stato inserito');
+        return redirect(route('homepage'))->with('status','Il tuo post è stato inserito');
     }
 
     /**

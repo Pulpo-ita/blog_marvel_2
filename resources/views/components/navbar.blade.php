@@ -27,7 +27,7 @@
                 </li>
                 @endif
                 @else
-                <li class="nav-item font font-large"><a class="nav-link js-scroll-trigger font-white" href="">Inserisci Post</a></li>
+                <li class="nav-item font font-large"><a class="nav-link js-scroll-trigger font-white" href="{{route('post.create')}}">Inserisci Post</a></li>
                 <li class="nav-item dropdown">
                     
                     <a id="navbarDropdown" class="nav-link dropdown-toggle font font-large font-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
