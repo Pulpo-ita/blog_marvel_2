@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -72,7 +72,7 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
-  background-color: #f8fafc;
+  background-color: black;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -511,7 +511,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #f8fafc;
+  background-color: black;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -4240,15 +4240,15 @@ input[type=button].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px black, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px black, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px black, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range::-moz-focus-outer {
@@ -4454,8 +4454,8 @@ input[type=button].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #f8fafc;
-  border-color: #dee2e6 #dee2e6 #f8fafc;
+  background-color: black;
+  border-color: #dee2e6 #dee2e6 black;
 }
 
 .nav-tabs .dropdown-menu {
@@ -10901,5 +10901,58 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+:root {
+  --red_marvel: #ec1d24;
+}
+
+.font {
+  font-family: "Bebas Neue", cursive;
+}
+
+.font-large {
+  font-size: large !important;
+}
+
+header.masthead {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  background: linear-gradient(to bottom, rgba(26, 15, 15, 0.8) 0%, rgba(255, 0, 0, 0.8) 100%), url("/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.font-white {
+  color: white !important;
+}
+
+.btn-color {
+  background-color: var(--red_marvel) !important;
+}
+
+.bg-color-marvel {
+  background-color: var(--red_marvel) !important;
+}
+
+.font-red-marvel {
+  color: var(--red_marvel) !important;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  border: none;
+}
+
+.pt-custom {
+  padding-top: 200px !important;
 }
 
