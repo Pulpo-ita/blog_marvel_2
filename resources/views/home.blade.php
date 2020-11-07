@@ -16,13 +16,13 @@
             </div>
             <div class="row mt-4">
                 @foreach ($posts as $post)
-                <div class="col-12 col-md-4 mx-2">
+                <div class="col-12 col-md-4 ">
                     <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body">
+                            <img class="card-img-top" src="{{Storage::url($post->img )}}" alt="Card image cap">
                         <h5 class="card-title">{{$post->title}}</h5>
                           <p class="card-text">{{$post->body}}</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="{{ route('post.show', compact ('post')) }}" class="btn btn-primary">Dettaglio</a>
                         </div>
                       </div>
                 </div>   

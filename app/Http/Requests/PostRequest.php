@@ -24,8 +24,10 @@ class PostRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|min:5|max:20',
-            'body' => 'required|min:20|max:500'
+            'title' => 'required|min:5|max:30',
+            'body' => 'required|min:20|max:500',
+            'img'=> 'required|image',
+        
             
         ];
     }
@@ -34,11 +36,13 @@ class PostRequest extends FormRequest
         
         return [
             'title.required' => 'inserisci titolo',
-            'title.min'=>'inserisci almeno 4 caratteri',
-            'title.max'=>'inserisci massimo 20 caratteri',
-            'body.required' => 'inserisci nome',
-            'body.min'=>'inserisci almeno 20 caratteri',
-            'body.max'=>'inserisci massimo 500 caratteri'
+            'title.min'=>'inserisci un titolo con almeno 5 caratteri',
+            'title.max'=>'inserisci un titolo con massimo 30 caratteri',
+            'body.required' => 'inserisci contenuto del post',
+            'body.min'=>'inserisci una descrizione con almeno 20 caratteri',
+            'body.max'=>'inserisci una descrizione con massimo 500 caratteri',
+            'img.required'=>'inserisci immagine',
+            'img.image'=> 'formato immagine non valido'
         ];
         }
     }

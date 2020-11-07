@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
+use App\Http\Requests\UpdateRequest;
 
 class PostController extends Controller
 {
@@ -41,6 +42,7 @@ class PostController extends Controller
 
             'title'=> $request->input('title'),
             'body'=> $request->input('body'),
+            'img' =>$request->file('img')->store('public/img')
         ]);
 
         return redirect(route('homepage'))->with('status','Il tuo è stato inserito');
@@ -54,7 +56,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return view('post.show', compact ('post'));
     }
 
     /**
@@ -65,7 +67,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+    return view('post.edit', compact('post'));
     }
 
     /**
@@ -75,9 +77,16 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(UpdateRequest $request, Post $post)
     {
-        //
+       
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->img = $request->file('img')->store('public/img');
+        $post->save();
+        
+       
+       return redirect(route('homepage'))->with('status', 'il tuo post è stato aggiornato');
     }
 
     /**
@@ -88,6 +97,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect(route('homepage'))->with('status', 'il tuo post è stato cancellato');
     }
 }
