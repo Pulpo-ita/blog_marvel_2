@@ -25,7 +25,7 @@ class UpdateRequest extends FormRequest
     {
         return [
             'title' => 'required|min:5|max:50',
-            'body' => 'required|min:20|max:500',
+            'body' => 'required|min:20|max:50000',
             'img'=> 'required|image'
             
         ];
@@ -39,7 +39,7 @@ class UpdateRequest extends FormRequest
             'title.max'=>'inserisci un titolo con massimo 50 caratteri',
             'body.required' => 'inserisci contenuto del post',
             'body.min'=>'inserisci una descrizione con almeno 20 caratteri',
-            'body.max'=>'inserisci una descrizione con massimo 500 caratteri',
+            'body.max'=>'inserisci una descrizione con massimo 50000 caratteri',
             'img.required'=>'inserisci immagine',
             'img.image'=> 'formato immagine non valido'
         ];

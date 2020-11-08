@@ -23,9 +23,11 @@
     @endif
     
     <div class="row">
-      
+   <div class="col-12 col-md-2">
+
+   </div>
       <!-- Blog Entries Column -->
-      <div class="col-md-8">
+      <div class="col-12 col-md-8">
         
         <p class=" display-4 my-4 text-white font py-5 ">Ultimi post inseriti</p>
         

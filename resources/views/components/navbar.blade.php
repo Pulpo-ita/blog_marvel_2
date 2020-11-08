@@ -12,8 +12,6 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
-                <li class="nav-item font  font-large"><a class="nav-link js-scroll-trigger font-white" href="">Contatti</a></li>
-                
                 @guest
                 @if (Route::has('login'))
                 <li class="nav-item ">
