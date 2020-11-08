@@ -24,8 +24,8 @@ class PostRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|min:5|max:30',
-            'body' => 'required|min:20|max:500',
+            'title' => 'required|min:5|max:50',
+            'body' => 'required|min:10|max:500',
             'img'=> 'required|image',
         
             
@@ -37,7 +37,7 @@ class PostRequest extends FormRequest
         return [
             'title.required' => 'inserisci titolo',
             'title.min'=>'inserisci un titolo con almeno 5 caratteri',
-            'title.max'=>'inserisci un titolo con massimo 30 caratteri',
+            'title.max'=>'inserisci un titolo con massimo 50 caratteri',
             'body.required' => 'inserisci contenuto del post',
             'body.min'=>'inserisci una descrizione con almeno 20 caratteri',
             'body.max'=>'inserisci una descrizione con massimo 500 caratteri',

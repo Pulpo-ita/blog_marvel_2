@@ -10968,3 +10968,10 @@ header.masthead {
   word-wrap: break-word;
 }
 
+.p-outset {
+  border-style: outset;
+  border-top: none;
+  border-bottom: none;
+  border-color: var(--red_marvel);
+}
+

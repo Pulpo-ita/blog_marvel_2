@@ -4,12 +4,12 @@
             <div class="col-12 col-md-2">
 
             </div>
-            <div class="col-12 col-md-8 text-center  ">
+            <div class="col-12 col-md-8 text-center p-outset  ">
                 <h1 class="font font-red-marvel">{{$post->title}}</h1>
                 <div class="text-white small font-italic">Postato il <span>{{$post->created_at->format('d/m/y')}}</span></div>
-                <img class="img-fluid pt-3" src="{{Storage::url($post->img )}}" alt="">
+                <img class="img-fluid pt-3 pb-3" src="{{Storage::url($post->img )}}" alt="">
                 
-                <h3 class=" lead font-body text-white pt-3 word-wrap">{{$post->body}}</h3>
+                <h3 class=" text-justify lead font-body text-white pt-3 word-wrap">{{$post->body}}</h3>
             </div>
             <div class="col-12 col-md-2">
                 
