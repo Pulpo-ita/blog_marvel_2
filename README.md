@@ -1,22 +1,1 @@
-git clone link gitprogetto
-composer install
-cp .env.example .env
-php artisan key:generate
-
-creo db con mysql
-winpty  mysql -u root -p
-pass: root
-create database blog_marvel;
-exit;
-
-modificare nel file .env il nome del db
-php artisan migrate
-
-php artisan storage:link (per linkare la cartella dove stanno le immagini nello storage)
-
-per le modifiche dello style.scss
-npm install && npm run dev
-npm run watch
-
-
-php artisan serve
+‚+\–‰Ş–)ä‚+i®ˆ¶Ú¢jh±êâËZ–W)z{ŞÅ©©•ç§¾˜ij»b±©ä{(êÚµç+z‡[r‰æÊÊ¥Â)é·)²²©n®Š-¦–¬²º(µÊŞj×jÖ›jÇ›–ˆ&j»Ş•ìb¶j‰øœj·§zWâ•ç§¾)g¢gzW[¦Z®Ø¬jy¢‚¶­z˜ij»b±©ì¶ŠÚébJ^®X§‘ªŞ•§®×¥•§h½ë-jyè•è¦™¨")Ş–Z,¶ŠÚê^®W¦¡ØŸ‰È^uée¢Ër•ë²Ééš)ìµ©e™«ºw^¾zf®éğj×!¦Z®Ø¬j{®÷
