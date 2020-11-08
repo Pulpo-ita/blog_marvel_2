@@ -5,7 +5,15 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header bg-color-marvel text-white font display-4">Crea il tuo nuovo post</div>
-                    
+                    @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
                     <div class="card-body">
                         <form method="POST" action="{{route('post.store')}}" enctype="multipart/form-data">
                             @csrf
