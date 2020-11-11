@@ -87,8 +87,7 @@ class PostController extends Controller
         $post->body = $request->input('body');
         $post->img = $request->file('img')->store('public/img');
         $post->save();
-        
-       
+    
        return redirect(route('homepage'))->with('status', 'il tuo post è stato aggiornato');
     }
 
