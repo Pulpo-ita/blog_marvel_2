@@ -482,7 +482,7 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");\n\n__webpack_require__(/*! ./script */ \"./resources/js/script.js\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvYXBwLmpzPzZkNDAiXSwibmFtZXMiOlsicmVxdWlyZSJdLCJtYXBwaW5ncyI6IkFBQUFBLG1CQUFPLENBQUMsZ0RBQUQsQ0FBUDs7QUFDQUEsbUJBQU8sQ0FBQywwQ0FBRCxDQUFQIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL2FwcC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbInJlcXVpcmUoJy4vYm9vdHN0cmFwJyk7XHJcbnJlcXVpcmUoJy4vc2NyaXB0Jyk7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
+eval("__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");\n\n__webpack_require__(/*! ./scripts */ \"./resources/js/scripts.js\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvYXBwLmpzPzZkNDAiXSwibmFtZXMiOlsicmVxdWlyZSJdLCJtYXBwaW5ncyI6IkFBQUFBLG1CQUFPLENBQUMsZ0RBQUQsQ0FBUDs7QUFDQUEsbUJBQU8sQ0FBQyw0Q0FBRCxDQUFQIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL2FwcC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbInJlcXVpcmUoJy4vYm9vdHN0cmFwJyk7XHJcbnJlcXVpcmUoJy4vc2NyaXB0cycpOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
 
 /***/ }),
 
@@ -497,14 +497,14 @@ eval("window._ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodas
 
 /***/ }),
 
-/***/ "./resources/js/script.js":
-/*!********************************!*\
-  !*** ./resources/js/script.js ***!
-  \********************************/
+/***/ "./resources/js/scripts.js":
+/*!*********************************!*\
+  !*** ./resources/js/scripts.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var myNav = document.getElementById('#navbar');\n\nwindow.onscroll = function () {\n  \"use strict\";\n\n  if (document.body.scrollTop >= 200) {\n    myNav.classList.add(\"nav-colored\");\n    myNav.classList.remove(\"nav-transparent\");\n  } else {\n    myNav.classList.add(\"nav-transparent\");\n    myNav.classList.remove(\"nav-colored\");\n  }\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvc2NyaXB0LmpzPzg3MzMiXSwibmFtZXMiOlsibXlOYXYiLCJkb2N1bWVudCIsImdldEVsZW1lbnRCeUlkIiwid2luZG93Iiwib25zY3JvbGwiLCJib2R5Iiwic2Nyb2xsVG9wIiwiY2xhc3NMaXN0IiwiYWRkIiwicmVtb3ZlIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFJQSxLQUFLLEdBQUdDLFFBQVEsQ0FBQ0MsY0FBVCxDQUF3QixTQUF4QixDQUFaOztBQUVBQyxNQUFNLENBQUNDLFFBQVAsR0FBa0IsWUFBWTtBQUMxQjs7QUFDQSxNQUFJSCxRQUFRLENBQUNJLElBQVQsQ0FBY0MsU0FBZCxJQUEyQixHQUEvQixFQUFxQztBQUNqQ04sU0FBSyxDQUFDTyxTQUFOLENBQWdCQyxHQUFoQixDQUFvQixhQUFwQjtBQUNBUixTQUFLLENBQUNPLFNBQU4sQ0FBZ0JFLE1BQWhCLENBQXVCLGlCQUF2QjtBQUNILEdBSEQsTUFJSztBQUNEVCxTQUFLLENBQUNPLFNBQU4sQ0FBZ0JDLEdBQWhCLENBQW9CLGlCQUFwQjtBQUNBUixTQUFLLENBQUNPLFNBQU4sQ0FBZ0JFLE1BQWhCLENBQXVCLGFBQXZCO0FBQ0g7QUFDSixDQVZEIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL3NjcmlwdC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBteU5hdiA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcjbmF2YmFyJyk7XHJcblxyXG53aW5kb3cub25zY3JvbGwgPSBmdW5jdGlvbiAoKSB7IFxyXG4gICAgXCJ1c2Ugc3RyaWN0XCI7XHJcbiAgICBpZiAoZG9jdW1lbnQuYm9keS5zY3JvbGxUb3AgPj0gMjAwICkge1xyXG4gICAgICAgIG15TmF2LmNsYXNzTGlzdC5hZGQoXCJuYXYtY29sb3JlZFwiKTtcclxuICAgICAgICBteU5hdi5jbGFzc0xpc3QucmVtb3ZlKFwibmF2LXRyYW5zcGFyZW50XCIpO1xyXG4gICAgfSBcclxuICAgIGVsc2Uge1xyXG4gICAgICAgIG15TmF2LmNsYXNzTGlzdC5hZGQoXCJuYXYtdHJhbnNwYXJlbnRcIik7XHJcbiAgICAgICAgbXlOYXYuY2xhc3NMaXN0LnJlbW92ZShcIm5hdi1jb2xvcmVkXCIpO1xyXG4gICAgfVxyXG59OyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/js/script.js\n");
+eval("var navbar = document.querySelector('#navbar');\ndocument.addEventListener('scroll', function () {\n  if (window.pageYOffset > 600) {\n    navbar.classList.add('bg-black');\n  } else {\n    navbar.classList.remove('bg-black');\n  }\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvc2NyaXB0cy5qcz9iOGQ4Il0sIm5hbWVzIjpbIm5hdmJhciIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsImFkZEV2ZW50TGlzdGVuZXIiLCJ3aW5kb3ciLCJwYWdlWU9mZnNldCIsImNsYXNzTGlzdCIsImFkZCIsInJlbW92ZSJdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSUEsTUFBTSxHQUFHQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsQ0FBYjtBQUVBRCxRQUFRLENBQUNFLGdCQUFULENBQTBCLFFBQTFCLEVBQW1DLFlBQUs7QUFFeEMsTUFBSUMsTUFBTSxDQUFDQyxXQUFQLEdBQXFCLEdBQXpCLEVBQThCO0FBQzVCTCxVQUFNLENBQUNNLFNBQVAsQ0FBaUJDLEdBQWpCLENBQXFCLFVBQXJCO0FBRUQsR0FIRCxNQUdPO0FBQ0xQLFVBQU0sQ0FBQ00sU0FBUCxDQUFpQkUsTUFBakIsQ0FBd0IsVUFBeEI7QUFHRDtBQUVBLENBWEQiLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvc2NyaXB0cy5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImxldCBuYXZiYXIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjbmF2YmFyJylcclxuXHJcbmRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ3Njcm9sbCcsKCk9PiB7XHJcbiAgIFxyXG5pZiAod2luZG93LnBhZ2VZT2Zmc2V0ID4gNjAwKSB7XHJcbiAgbmF2YmFyLmNsYXNzTGlzdC5hZGQoJ2JnLWJsYWNrJyk7XHJcbiAgXHJcbn0gZWxzZSB7XHJcbiAgbmF2YmFyLmNsYXNzTGlzdC5yZW1vdmUoJ2JnLWJsYWNrJyk7XHJcbiAgXHJcblxyXG59XHJcblxyXG59KVxyXG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/scripts.js\n");
 
 /***/ }),
 
@@ -526,8 +526,8 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\grose\wa\LARAVEL\blog_marvel_alessio_gabriella\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\grose\wa\LARAVEL\blog_marvel_alessio_gabriella\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Alessio\wa\laravel\blog_marvel_alessio_gabriella\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Alessio\wa\laravel\blog_marvel_alessio_gabriella\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -10975,3 +10975,7 @@ header.masthead {
   border-color: var(--red_marvel);
 }
 
+.bg-black {
+  background-color: black;
+}
+

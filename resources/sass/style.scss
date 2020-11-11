@@ -23,7 +23,7 @@ header.masthead {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-  }
+}
 
 .font-white{
     color: white !important;
@@ -51,8 +51,7 @@ header.masthead {
     border: none;
 }
 
-// .nav-colored { background-color:#000; }
-// .nav-transparent { background-color:transparent;}
+
 
 .pt-custom{
     padding-top: 150px !important;
@@ -71,4 +70,8 @@ header.masthead {
     border-top: none;
     border-bottom: none;
     border-color: var(--red_marvel);
+}
+
+.bg-black{
+    background-color: black;
 }

@@ -8,7 +8,7 @@
                     <div class="col-12 col-md-8 p-outset">
                         <img class="img-fluid  pt-3 mb-3" src="{{Storage::url($post->img )}}" alt="">
                         <h1 class="font font-red-marvel text-center mb-3">{{$post->title}}</h1>
-                        <div class="text-white text-left small font-italic">Postato il 
+                        <div class="text-white text-left small font-italic">Postato da <span>{{ $post->user->name }}</span> il 
                             <span>{{$post->created_at->format('d/m/y')}}</span>
                         </div>              
                         <h3 class=" text-justify lead font-body text-white pt-3 word-wrap">{{$post->body}}</h3>

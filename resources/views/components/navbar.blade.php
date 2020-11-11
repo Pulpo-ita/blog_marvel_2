@@ -1,4 +1,4 @@
-<nav id="#navbar" class="navbar navbar-expand-md navbar-light fixed-top ">
+<nav id="navbar" class="navbar navbar-expand-md navbar-light fixed-top ">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <img src="/img/logo.png" alt="" class="w-25">

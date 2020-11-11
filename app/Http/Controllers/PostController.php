@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
+use Illuminate\Support\Facades\App;
 use App\Http\Requests\UpdateRequest;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -14,10 +16,10 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+   
+    public function __construct()
     {
-        $posts= Post::all();
-        return view('home', compact('posts'));
+     $this->middleware('auth');
     }
 
     /**
@@ -38,7 +40,8 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        $post= Post::create([
+        $user= Auth::user();
+        $post= $user->posts()->create([
 
             'title'=> $request->input('title'),
             'body'=> $request->input('body'),
@@ -47,17 +50,17 @@ class PostController extends Controller
 
         return redirect(route('homepage'))->with('status','Il tuo post è stato inserito');
     }
-
+    public function show(Post $post)
+    {
+        return view('post.show', compact ('post'));
+    }
     /**
      * Display the specified resource.
      *
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
-    {
-        return view('post.show', compact ('post'));
-    }
+    
 
     /**
      * Show the form for editing the specified resource.
