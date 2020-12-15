@@ -2,7 +2,7 @@ let navbar = document.querySelector('#navbar')
 
 document.addEventListener('scroll',()=> {
    
-if (window.pageYOffset > 600) {
+if (window.pageYOffset > 100) {
   navbar.classList.add('bg-black');
   
 } else {
